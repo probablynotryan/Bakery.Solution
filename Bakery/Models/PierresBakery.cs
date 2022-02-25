@@ -28,15 +28,21 @@ namespace Bakery.Model
 
     public int PastryOrder (int pastries)
     {
-      double pastryCost = 0;
+      int pastryCost = 0;
       while (pastries > 5)
       {
         pastryCost += 10;
         pastries -= 6;
       } 
-      double remainder = Convert.ToDouble(pastries/2);
-      pastryCost += Math.Ceiling(remainder) + 1;
-      return pastryCost;
+      if (pastries > 3) 
+      {
+        pastryCost += pastries + (int)Math.Ceiling(Decimal.Divide(pastries, 2)) + 1;
+      }
+      else
+      {
+        pastryCost += pastries + (int)Math.Ceiling(Decimal.Divide(pastries, 2));
+      }
+    return pastryCost;
     }
   
   }

@@ -32,6 +32,10 @@ namespace Bakery.Test
     public void PastryOrder_6Returns10_10()
       {
         PierresBakery testBreadOrder = new PierresBakery();
+        Assert.AreEqual(12, testBreadOrder.PastryOrder(7));
+        Assert.AreEqual(2, testBreadOrder.PastryOrder(1));
+        Assert.AreEqual(5, testBreadOrder.PastryOrder(3));
+        Assert.AreEqual(9, testBreadOrder.PastryOrder(5));
         Assert.AreEqual(10, testBreadOrder.PastryOrder(6));
       }
   }
