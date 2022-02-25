@@ -4,9 +4,10 @@ namespace Bakery.Model
 {
   public class BreadBread 
   {
-    public int BreadOrder(int breads)
+    public int Breads { get; set; }
+    private int BreadOrder(int Breads)
     {
-      return ((breads - (breads / 3)) * 5);
+      return ((Breads - (Breads / 3)) * 5);
     }
   }
 }
