@@ -28,10 +28,10 @@ namespace Bakery.Test
         Assert.AreEqual(10, testBreadOrder.BreadOrder(3));
       }
           [TestMethod]
-    public void PastryOrder_1Returns4_4()
+    public void PastryOrder_6Returns10_10()
       {
         PierresBakery testBreadOrder = new PierresBakery();
-        Assert.AreEqual(4, testBreadOrder.PastryOrder(1));
+        Assert.AreEqual(10, testBreadOrder.PastryOrder(6));
       }
   }
 }
