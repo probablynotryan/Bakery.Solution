@@ -28,41 +28,41 @@ namespace Bakery.Model
    }
    public int PastryOrder (int pastries)
    {
-     int pastryCost = 0;
-     int countedPastries = pastries;
-     for (int i = 1; i <= pastries; i++)
-     {
-      if (countedPastries >= 6) 
-      {
-        pastryCost += 10;
-        countedPastries -= 6;
-      } 
-      else if (countedPastries == 5)
-      {
-        pastryCost += 9;
-        countedPastries -= 5;
-      }
-      else if (countedPastries == 4)
-      {
-        pastryCost += 7;
-        countedPastries -= 4;
-      }
-      else if (countedPastries == 3)
+    int pastryCost = 0;
+    while (pastries >= 6)
+    {
+      pastryCost += 10;
+      pastries -= 6;
+    } 
+    if (pastries == 5)
+    {
+      pastryCost += 9;
+      return pastryCost;
+    }
+    else if (pastries == 4)
+    {
+      pastryCost += 7;
+      return pastryCost;
+    }
+      else if (pastries == 3)
       {
         pastryCost += 5;
-        countedPastries -= 3;
+        return pastryCost;
       }
-      else if (countedPastries >= 1)
+      else if (pastries == 2)
+      {
+        pastryCost += 4;
+        return pastryCost;
+      } 
+      else if (pastries == 1)
       {
         pastryCost += 2;
-        countedPastries -= 1;
+        return pastryCost;
       }
-      else 
+      else
       {
-        continue;
+      return pastryCost;
       }
-    }
-   return pastryCost;
    }
   }
 }
