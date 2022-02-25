@@ -6,19 +6,7 @@ namespace Bakery.Model
   {
     public int BreadOrder(int breads)
     {
-      int breadsCost = 0;
-      for (int i = 1; i <= breads; i++)
-      {
-        if (i % 3 != 0)
-        {
-          breadsCost += 5;
-        }
-        else
-        {
-          continue;
-        }
-      }
-    return breadsCost;
-   }
+      return ((breads - (breads / 3)) * 5);
+    }
   }
 }
