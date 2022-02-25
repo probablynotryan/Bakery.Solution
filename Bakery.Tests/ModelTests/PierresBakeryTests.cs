@@ -29,6 +29,8 @@ namespace Bakery.Test
         Assert.AreEqual(5, testPastryOrder.PastryOrder(3));
         Assert.AreEqual(9, testPastryOrder.PastryOrder(5));
         Assert.AreEqual(10, testPastryOrder.PastryOrder(6));
+        Assert.AreEqual(20, testPastryOrder.PastryOrder(12));
+        Assert.AreEqual(30, testPastryOrder.PastryOrder(18));
       }
   }
 }
