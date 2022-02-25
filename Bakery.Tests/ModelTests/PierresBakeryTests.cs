@@ -14,10 +14,18 @@ namespace Bakery.Test
     }
 
     [TestMethod]
-    public void BreadOrder_1Returns5_5()
+    public void BreadOrder_IntReturnsIntTimesFive_IntTimesFive()
       {
         PierresBakery testBreadOrder = new PierresBakery();
         Assert.AreEqual(5, testBreadOrder.BreadOrder(1));
+        Assert.AreEqual(10, testBreadOrder.BreadOrder(2));
+      }
+
+    [TestMethod]
+    public void BreadOrder_3Returns10_10()
+      {
+        PierresBakery testBreadOrder = new PierresBakery();
+        Assert.AreEqual(10, testBreadOrder.BreadOrder(3));
       }
   }
 }
