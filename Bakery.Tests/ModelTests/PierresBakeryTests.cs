@@ -27,5 +27,11 @@ namespace Bakery.Test
         PierresBakery testBreadOrder = new PierresBakery();
         Assert.AreEqual(10, testBreadOrder.BreadOrder(3));
       }
+          [TestMethod]
+    public void PastryOrder_1Returns4_4()
+      {
+        PierresBakery testBreadOrder = new PierresBakery();
+        Assert.AreEqual(4, testBreadOrder.PastryOrder(1));
+      }
   }
 }
