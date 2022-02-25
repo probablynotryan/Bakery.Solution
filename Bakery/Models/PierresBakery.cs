@@ -1,5 +1,4 @@
 using System;
-using System.Text;
 
 namespace Bakery.Model
 {
@@ -26,43 +25,19 @@ namespace Bakery.Model
       }
     return breadsCost;
    }
-   public int PastryOrder (int pastries)
-   {
-    int pastryCost = 0;
-    while (pastries >= 6)
+
+    public int PastryOrder (int pastries)
     {
-      pastryCost += 10;
-      pastries -= 6;
-    } 
-    if (pastries == 5)
-    {
-      pastryCost += 9;
-      return pastryCost;
-    }
-    else if (pastries == 4)
-    {
-      pastryCost += 7;
-      return pastryCost;
-    }
-      else if (pastries == 3)
+      double pastryCost = 0;
+      while (pastries > 5)
       {
-        pastryCost += 5;
-        return pastryCost;
-      }
-      else if (pastries == 2)
-      {
-        pastryCost += 4;
-        return pastryCost;
+        pastryCost += 10;
+        pastries -= 6;
       } 
-      else if (pastries == 1)
-      {
-        pastryCost += 2;
-        return pastryCost;
-      }
-      else
-      {
+      double remainder = Convert.ToDouble(pastries/2);
+      pastryCost += Math.Ceiling(remainder) + 1;
       return pastryCost;
-      }
-   }
+    }
+  
   }
 }
