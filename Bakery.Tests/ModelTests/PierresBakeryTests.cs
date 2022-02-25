@@ -16,21 +16,40 @@ namespace Bakery.Test
 
     [TestMethod]
     public void BreadOrder_3Returns10_10()
-      {
-        BreadBread testBreadOrder = new BreadBread();
-        Assert.AreEqual(10, testBreadOrder.BreadOrder(3));
-      }
-          [TestMethod]
+    {
+      BreadBread testBreadOrder = new BreadBread();
+      Assert.AreEqual(10, testBreadOrder.BreadOrder(3));
+    }
+
+    [TestMethod]
     public void PastryOrder_6Returns10_10()
-      {
-        PastryPastry testPastryOrder = new PastryPastry();
-        Assert.AreEqual(12, testPastryOrder.PastryOrder(7));
-        Assert.AreEqual(2, testPastryOrder.PastryOrder(1));
-        Assert.AreEqual(5, testPastryOrder.PastryOrder(3));
-        Assert.AreEqual(9, testPastryOrder.PastryOrder(5));
-        Assert.AreEqual(10, testPastryOrder.PastryOrder(6));
-        Assert.AreEqual(20, testPastryOrder.PastryOrder(12));
-        Assert.AreEqual(30, testPastryOrder.PastryOrder(18));
-      }
+    {
+      PastryPastry testPastryOrder = new PastryPastry();
+      Assert.AreEqual(10, testPastryOrder.PastryOrder(6));
+    }
+    [TestMethod]
+    public void PastryOrder_3Returns5_5()
+    {
+      PastryPastry testPastryOrder = new PastryPastry();
+      Assert.AreEqual(5, testPastryOrder.PastryOrder(3));
+    }
+    [TestMethod]
+    public void PastryOrder_4Returns7_7()
+    {
+      PastryPastry testPastryOrder = new PastryPastry();
+      Assert.AreEqual(7, testPastryOrder.PastryOrder(4));
+    }
+    [TestMethod]
+    public void PastryOrder_5Returns9_9()
+    {
+      PastryPastry testPastryOrder = new PastryPastry();
+      Assert.AreEqual(9, testPastryOrder.PastryOrder(5));
+    }
+    [TestMethod]
+    public void PastryOrder_18Returns30_30()
+    {
+      PastryPastry testPastryOrder = new PastryPastry();
+      Assert.AreEqual(30, testPastryOrder.PastryOrder(18));
+    }
   }
 }
