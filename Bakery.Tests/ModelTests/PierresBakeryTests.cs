@@ -8,13 +8,6 @@ namespace Bakery.Test
   public class BakeryTests
   {
     [TestMethod]
-    public void BakeryOrder_AnyIntReturnsDingDing_DingDing()
-    {
-      PierresBakery testBakeryOrder = new PierresBakery();
-      Assert.AreEqual("Ding ding!", testBakeryOrder.BakeryOrder(124));
-    }
-
-    [TestMethod]
     public void BreadOrder_3Returns10_10()
     {
       BreadBread testBreadOrder = new BreadBread();
