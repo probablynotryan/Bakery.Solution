@@ -4,23 +4,16 @@ namespace Bakery.Model
 {
   public class PastryPastry
   {
-    public int PastryOrder (int pastries)
+    public int PastryOrder (int numOfPastries)
     {
       int pastryCost = 0;
-      while (pastries > 5)
+      while (numOfPastries > 5)
       {
         pastryCost += 10;
-        pastries -= 6;
+        numOfPastries -= 6;
       } 
-      if (pastries > 3) 
-      {
-        pastryCost += pastries + (int)Math.Ceiling(Decimal.Divide(pastries, 2)) + 1;
-      }
-      else
-      {
-        pastryCost += pastries + (int)Math.Ceiling(Decimal.Divide(pastries, 2));
-      }
-    return pastryCost;
+      pastryCost += numOfPastries + (int)Math.Ceiling(Decimal.Divide(numOfPastries, 2)) + ((numOfPastries - 1) / 3);
+      return pastryCost;
     } 
   }
 }
