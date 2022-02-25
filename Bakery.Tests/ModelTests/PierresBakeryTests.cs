@@ -10,7 +10,7 @@ namespace Bakery.Test
     public void BakeryOrder_AnyIntReturnsDingDing_DingDing()
     {
       PierresBakery testBakeryOrder = new PierresBakery();
-      Assert.AreEqual("Ding dong!", testBakeryOrder.BakeryOrder(124));
+      Assert.AreEqual("Ding ding!", testBakeryOrder.BakeryOrder(124));
     }
   }
 }
