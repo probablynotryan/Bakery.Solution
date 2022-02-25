@@ -8,7 +8,10 @@ namespace Bakery.Model
     {
       return "Ding ding!";
     }
-
+  }
+  
+  public class BreadBread 
+  {
     public int BreadOrder(int breads)
     {
       int breadsCost = 0;
@@ -25,7 +28,10 @@ namespace Bakery.Model
       }
     return breadsCost;
    }
+  }
 
+  public class PastryPastry
+  {
     public int PastryOrder (int pastries)
     {
       int pastryCost = 0;

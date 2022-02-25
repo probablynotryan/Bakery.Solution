@@ -15,28 +15,20 @@ namespace Bakery.Test
     }
 
     [TestMethod]
-    public void BreadOrder_IntReturnsIntTimesFive_IntTimesFive()
-      {
-        PierresBakery testBreadOrder = new PierresBakery();
-        Assert.AreEqual(5, testBreadOrder.BreadOrder(1));
-        Assert.AreEqual(10, testBreadOrder.BreadOrder(2));
-      }
-
-    [TestMethod]
     public void BreadOrder_3Returns10_10()
       {
-        PierresBakery testBreadOrder = new PierresBakery();
+        BreadBread testBreadOrder = new BreadBread();
         Assert.AreEqual(10, testBreadOrder.BreadOrder(3));
       }
           [TestMethod]
     public void PastryOrder_6Returns10_10()
       {
-        PierresBakery testBreadOrder = new PierresBakery();
-        Assert.AreEqual(12, testBreadOrder.PastryOrder(7));
-        Assert.AreEqual(2, testBreadOrder.PastryOrder(1));
-        Assert.AreEqual(5, testBreadOrder.PastryOrder(3));
-        Assert.AreEqual(9, testBreadOrder.PastryOrder(5));
-        Assert.AreEqual(10, testBreadOrder.PastryOrder(6));
+        PastryPastry testPastryOrder = new PastryPastry();
+        Assert.AreEqual(12, testPastryOrder.PastryOrder(7));
+        Assert.AreEqual(2, testPastryOrder.PastryOrder(1));
+        Assert.AreEqual(5, testPastryOrder.PastryOrder(3));
+        Assert.AreEqual(9, testPastryOrder.PastryOrder(5));
+        Assert.AreEqual(10, testPastryOrder.PastryOrder(6));
       }
   }
 }
