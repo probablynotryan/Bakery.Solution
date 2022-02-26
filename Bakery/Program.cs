@@ -7,8 +7,6 @@ namespace Bakery
   {
     public static void Main()
     {
-      BreadBread Cat = new BreadBread();
-      PastryPastry Dog = new PastryPastry();
       Console.Write("Welcome to ");
       Console.ForegroundColor = ConsoleColor.Green;
       Console.Write("Pierre's Bakery. ");
@@ -27,7 +25,7 @@ namespace Bakery
       Console.WriteLine("would you like? ($2/pastry)");
       string inTwo = Console.ReadLine();
       Console.ForegroundColor = ConsoleColor.Green;
-      Console.WriteLine("Your total is: $" + (Dog.PastryOrder(int.Parse(inTwo)) + Cat.BreadOrder(int.Parse(inOne))));
+      Console.WriteLine("Your total is: $" + (PastryPastry.PastryOrder(int.Parse(inTwo)) + BreadBread.BreadOrder(int.Parse(inOne))));
     }
   }
 }
