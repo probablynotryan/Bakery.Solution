@@ -25,9 +25,14 @@ namespace Bakery
       Console.WriteLine("would you like? ($2/pastry)");
       Console.WriteLine(int.TryParse(Console.ReadLine(), out int thisManyPastries) ? "No problem. " + thisManyPastries + " pastries." : "I prefer numbers, please. Try entering one of those next time. Moving on..");
       Console.ForegroundColor = ConsoleColor.Green;
-      if (thisManyPastries + thisManyBreads == 0)
+      if ((thisManyPastries <= 0) && (thisManyBreads <= 0))
       {
         Console.WriteLine("None for you today? That's alright. See you next time!");
+      }
+      else if (PastryPastry.PastryOrder(thisManyPastries) + BreadBread.BreadOrder(thisManyBreads) < 0)
+      {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("There was a problem processing your order. Please restart the app and try again.");
       }
       else
       {
