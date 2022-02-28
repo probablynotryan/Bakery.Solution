@@ -5,8 +5,9 @@ namespace Bakery.Model
   public class BreadBread 
   {
     public int Breads { get; set; }
-    public static int BreadOrder(int Breads)
+    public int BreadOrder(int numOfBreads)
     {
+      Breads = numOfBreads;
       return ((Breads - (Breads / 3)) * 5);
     }
   }

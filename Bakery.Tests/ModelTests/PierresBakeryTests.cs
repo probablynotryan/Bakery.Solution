@@ -13,6 +13,20 @@ namespace Bakery.Test
       BreadBread testBreadOrder = new BreadBread();
       Assert.AreEqual(10, testBreadOrder.BreadOrder(3));
     }
+        [TestMethod]
+    public void BreadOrder_1Returns5_5()
+    {
+      BreadBread testBreadOrder = new BreadBread();
+      Assert.AreEqual(5, testBreadOrder.BreadOrder(1));
+    }
+        [TestMethod]
+    public void BreadOrder_2Returns10_10()
+    {
+      BreadBread testBreadOrder = new BreadBread();
+      Assert.AreEqual(10, testBreadOrder.BreadOrder(2));
+    }
+
+    //pastryorder method tests
 
     [TestMethod]
     public void PastryOrder_6Returns10_10()
