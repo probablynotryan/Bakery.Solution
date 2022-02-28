@@ -30,7 +30,7 @@ dotnet run
 
 ## Known Bugs
 
-* Submitting values larger than 2,147,483,647 (int max value), even after failing int.TryParse may result in some unusual totals.
+* No bugs reported at this time.
 
 ## License
 MIT
