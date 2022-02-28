@@ -24,7 +24,7 @@ dotnet tool install -g dotnet-script
 ```
 * Run the program by entering the following command to your terminal:
 ```
-dotnet run
+dotnet build
 ```
 * Answer the questions (how many loaves, how many pastries, etc) and get a total for your order!
 
