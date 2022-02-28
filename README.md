@@ -12,7 +12,7 @@
 
 ## Description
 
-_Pierre is having a sale at his bakery and wants you to take advantage of it! Buy 3 loafs of bread and get one free! Buy a pastry for $2, buy three for $5, buy four for $7, buy five for $9, and six for $10! Tell him how many of each that you'd like and he will return the total back to you._
+_Pierre is having a sale at his bakery and wants you to take advantage of it! Buy 3 loafs of bread and get one free! Buy a pastry for $2, buy three for $5! Tell him how many of each that you'd like and he will return the total back to you._
 
 ## Setup/Installation Requirements
 
@@ -24,13 +24,13 @@ dotnet tool install -g dotnet-script
 ```
 * Run the program by entering the following command to your terminal:
 ```
-dotnet build
+dotnet run
 ```
 * Answer the questions (how many loaves, how many pastries, etc) and get a total for your order!
 
 ## Known Bugs
 
-* None to report
+* Submitting values larger than 2,147,483,647 (int max value), even after failing int.TryParse may result in some unusual totals.
 
 ## License
 MIT
