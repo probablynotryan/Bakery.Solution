@@ -7,6 +7,10 @@ namespace Bakery
   {
     public static void Main()
     {
+      private BreadBread GetThatBread = new BreadBread();
+      private PastryPastry GetThatPastry = new PastryPastry();
+  
+
       Console.Write("Welcome to ");
       Console.ForegroundColor = ConsoleColor.Green;
       Console.Write("Pierre's Bakery. ");
@@ -29,7 +33,7 @@ namespace Bakery
       {
         Console.WriteLine("None for you today? That's alright. See you next time!");
       }
-      else if (PastryPastry.PastryOrder(thisManyPastries) + BreadBread.BreadOrder(thisManyBreads) < 0)
+      else if (GetThatPastry.PastryOrder(thisManyPastries) + GetThatBread.BreadOrder(thisManyBreads) < 0)
       {
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("There was a problem processing your order. Please restart the app and try again.");
@@ -37,7 +41,7 @@ namespace Bakery
       else
       {
         Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("For " + thisManyBreads + " loaves and " + thisManyPastries + " pastries, your total is: $" + (PastryPastry.PastryOrder(thisManyPastries) + BreadBread.BreadOrder(thisManyBreads)) + ". Thanks for coming by!");
+        Console.WriteLine("For " + thisManyBreads + " loaves and " + thisManyPastries + " pastries, your total is: $" + (GetThatPastry.PastryOrder(thisManyPastries) + GetThatBread.BreadOrder(thisManyBreads)) + ". Thanks for coming by!");
       }    
     }
   }
