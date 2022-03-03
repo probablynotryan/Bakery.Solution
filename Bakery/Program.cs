@@ -5,12 +5,12 @@ namespace Bakery
 {
   public class Program
   {
+
     public static void Main()
     {
-      private BreadBread GetThatBread = new BreadBread();
-      private PastryPastry GetThatPastry = new PastryPastry();
-  
-
+      BreadBread GetThatBread = new BreadBread();
+      PastryPastry GetThatPastry = new PastryPastry();
+      
       Console.Write("Welcome to ");
       Console.ForegroundColor = ConsoleColor.Green;
       Console.Write("Pierre's Bakery. ");
@@ -41,7 +41,7 @@ namespace Bakery
       else
       {
         Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("For " + thisManyBreads + " loaves and " + thisManyPastries + " pastries, your total is: $" + (GetThatPastry.PastryOrder(thisManyPastries) + GetThatBread.BreadOrder(thisManyBreads)) + ". Thanks for coming by!");
+        Console.WriteLine("For " + thisManyBreads + " loaves and " + thisManyPastries + " pastries, your total is $" + (GetThatPastry.PastryOrder(thisManyPastries) + GetThatBread.BreadOrder(thisManyBreads)) + ". Thanks for coming by!");
       }    
     }
   }
