@@ -16,17 +16,14 @@ _Pierre is having a sale at his bakery and wants you to take advantage of it! Bu
 
 ## Setup/Installation Requirements
 
-* Download this repository to your computer.
+* Download or clone this repository to your computer.
 * Open this directory in VSCode or a preferred text editor.
-* Run the following command in your terminal to install REPL:
-```
-dotnet tool install -g dotnet-script
-```
-* Run the program by entering the following command to your terminal:
-```
-dotnet build
-```
-* Answer the questions (how many loaves, how many pastries, etc) and get a total for your order!
+* Run `dotnet tool install -g dotnet-script` in your terminal to install REPL.
+* From the root of your downloaded repo, run `dotnet build Bakery` in your terminal.
+* After a successful build, still from the root folder, run the program by entering `dotnet run --project Bakery` in your terminal.
+* Answer the questions (how many loaves, how many pastries, etc) and get a total for your order!  
+
+* Tests are also avaliable in Bakery.Tests folders -- if you wish to run those, run `dotnet test Bakery.Tests` in your terminal (still from the root folder). (For more information about what tests are being conducted, check out ~/Bakery.Tests/ModelTests/PierresBakeryTests.cs!)
 
 ## Known Bugs
 
